@@ -1,57 +1,59 @@
 <!-- md.25.2
-# published@2025-02-22
-updated@2025-02-22
+published@2025-02-23
+updated@2025-02-23
 minimalism
 review: books
 —-->
 
-# Book review : Goodbye, Things by Fumio Sasaki
+# Book review : _Goodbye, Things_ - Fumio Sasaki
 
-TLDR: Great book, would buy a third time if I needed to.
+> TLDR: Great book, I would it buy a third time if I needed to. 
+This book offers a refreshing perspective on minimalism and is structured for a very light read.
+You can dive into a few pages, set it down for months, and effortlessly pick it back up later.
 
-The structure of the book is a very light read. You could read a few pages, put the book down for months, and pick it up later and just continue reading.
+The book begins by exploring the psychology behind why we feel compelled to collect and keep things. It makes you reconsider the way you view the things you own.
 
-The book starts with understanding the psychology behind why we feel compelled to collect and keep things. It makes you reconsider the way you view the things you own.
+Then it goes into many practical tips to get rid of things, often with cheerful anecdotes.
 
-Then it goes into many practical tips to help part with stuff, often with a cheerful anecdote.
+Finally, the author shares the many aspects of how his life improved after embracing minimalism.
 
-Finally, the author shares the many aspects of how his life became better as a result of getting rid of things.
+# Key Takeaways
 
-# Key take-aways
-
-1. Owning stuff is a distraction. We have to maintain, clean, manage, stow, move around, and subsequently continuously think of all the junk collected over the years.
-2. We grossly over-value things we own. The actual value of stuff is the sell-price on the free market, which is _way_ lower than what we paid.
+1. Owning stuff is a distraction; we routinely maintain, clean, store, and move around all the junk we've collected over the years.
+2. We grossly over-value our possessions . The actual market value of our belongings is _way_ lower than what we paid for them.
 3. If something is not providing you value every year or two, it's doing the opposite.
 
-# 2 Things that stood out to me
+# Personal Reflections
 
-## Tools vs Treasure
+## Curiosity killed the cat
 
-For cavemen, it made sense to collect stuff, especially food. It meant not dying. Food was treasure.
-Even though stuff is so abundant today, especially food, our brains are still wired to collect stuff.
+For cavemen, collecting stuff, especially food, was essential for survival. It meant not dying. Food was treasure.
 
-Collecting something as a hobby like stamps or cups or whatever is fine, but collecting random junk just because we don't want to discard things just weighs us down.
+Although stuff is so abundant today, our brains are still wired to accumulate. While collecting hobbies like stamps or cups can be fun, hoarding random items due to overvalued attachments mostly weighs us down.
+What we truly need, are tools that continuously provide value. A thing to keep you warm, something to clean with, eat with, cut, smash, appreciate, etc.
 
-What is useful to us, are tools. A thing to keep you warm, a thing to clean with, eat with, cut, smash, write, etc. They continuously provide value.
+Similarly, in the realm of knowledge, we hoard. Whether it's facts about quantum physics or celebrity gossip, consuming information isn't useful to us in the same way.
 
-I think our brains are the same with knowledge (or just any content/media for that matter), and knowledge really isn't that useful to us in the same way.
-100 years ago, having a good general knowledge meant better understanding and navigation of the world. It made the phrase "knowledge is power".
-But today, I don't think so. You can look up anything, or ask a bot to give you a rough idea in a couple of seconds.
-Understanding the inner workings of the sun, the Bose–Einstein condensate, or world history in 1750, is just gorging on useless knowledge if you don't apply it.
-It's still very useful for humankind as a whole to know everything, just not for an individual (it's impossible btw).
+A century ago, having a good general knowledge meant better understanding and navigation of the world, leading to the phrase "knowledge is power." 
 
-Instead of learning new things, besides the entertainment of it, whether it be quantum physics or why what movie star did what this week, it would be more useful to collect mental tools.
-What are common logic fallacies, how do you improve critical thinking, how do you communicate more effectively, etc.
+Via the internet and creative chatbots, you can find or have something imagined for you in a manner of seconds.
 
-Today, food isn't treasure, it's common. Knowledge isn't treasure. Tools are treasure - knowing how to effectively find out something quickly is worth more than knowing a lot of stuff.
+In this day and age, one might argue that time is better spent being bored than learning without purpose.
 
-## Minimizing is not organizing
+What is useful for intellectual growth are mental tools, such as new perspectives, identifying logical fallacies, improving critical thinking, effective communication, etc.. Rather than collecting information, time is also better spent by practicing problem-solving and engaging in creative activities.
 
-Moving things around doesn't reduce complexity.
-Complex: Group things together
-Complicate: Things folded together. If you move one thing, one or more other things move with it.
+## Organizing is not minimizing
 
-..wip
+Moving things around doesn’t reduce complexity; it merely shifts it.
+
+I found this especially relevant in software. A big chunk of relevant code on a single page is often easier to grasp than multiple layers of abstraction scattered across numerous files.
+
+See [Locality of Behavior](https://htmx.org/essays/locality-of-behaviour/)
+and [Simple made easy](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md)
 
 
+## Conclusion
 
+Tools are the new treasures. Knowing how to effectively find and utilize information quickly is worth more than simply knowing a lot of stuff.
+
+Read the book. It's liberating to let go of old junk, and you might be surprised by how much more time you have on your hands.
