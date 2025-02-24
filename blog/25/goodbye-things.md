@@ -1,8 +1,8 @@
-<!-- md.25.2
-published@2025-02-23
-updated@2025-02-23
+<!-- md.1
+published @2025-02-23
+updated @2025-02-23
 minimalism
-review: books
+review/books
 —-->
 
 # Book review : _Goodbye, Things_ - Fumio Sasaki
@@ -42,6 +42,8 @@ In this day and age, one might argue that time is better spent being bored than 
 
 What is useful for intellectual growth are mental tools, such as new perspectives, identifying logical fallacies, improving critical thinking, effective communication, etc.. Rather than collecting information, time is also better spent by practicing problem-solving and engaging in creative activities.
 
+Mental tools are the new treasures. Knowing how to effectively find and utilize information quickly is worth more than simply knowing a lot of stuff.
+
 ## Organizing is not minimizing
 
 Moving things around doesn’t reduce complexity; it merely shifts it.
@@ -51,9 +53,10 @@ I found this especially relevant in software. A big chunk of relevant code on a 
 See [Locality of Behavior](https://htmx.org/essays/locality-of-behaviour/)
 and [Simple made easy](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md)
 
+Organization is essentially an abstraction, a perspective used to group related components. It shares the same flaw as taxonomy: in the real world, not everything fits neatly into every box, or even into just one box. In software, items keep changing, and so do the boxes.
+
+Organization isn't simplification, it is only one of many tools to manage complexity.
 
 ## Conclusion
-
-Tools are the new treasures. Knowing how to effectively find and utilize information quickly is worth more than simply knowing a lot of stuff.
 
 Read the book. It's liberating to let go of old junk, and you might be surprised by how much more time you have on your hands.
