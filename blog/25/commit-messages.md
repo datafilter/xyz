@@ -19,11 +19,12 @@ Atomic (or self-contained) commits focus on a single change. They are easy to re
 
 Meaningful commit messages guidelines:
 * Keep the subject line short and descriptive
-* Focus on the “What” and oly if necessary, the "Why"
+* Focus on the “What” and only if necessary, the "Why"
 * Write in the imperative mood e.g., 'Fix bug' rather than 'Fixed bug'
-* Optionally, reference tasks to:
-   * automatically close related tickets
+* Optionally, reference a task to:
    * provide additional context in the future
+   * related tickets are closed automatically
+
 
 ## Git Karma
 
