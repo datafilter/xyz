@@ -19,12 +19,15 @@ Atomic (or self-contained) commits focus on a single change. They are easy to re
 
 Meaningful commit messages guidelines:
 * Keep the subject line short and descriptive
+* Focus on the “What” and oly if necessary, the "Why"
 * Write in the imperative mood e.g., 'Fix bug' rather than 'Fixed bug'
-* Optionally, reference issues or tasks - _typically not found in commit messages themselves, rather in branch names or descriptions_
-
-Sometimes, commit messages might start with "Add" "Bump" "Test" or "Chore".
+* Optionally, reference tasks to:
+   * automatically close related tickets
+   * provide additional context in the future
 
 ## Git Karma
+
+Sometimes, you'll come across commit messages that start with "Add" "Bump" "Test" or "Chore"
 
 Recently I've come across a commit style that defines specific prefixes, called [Git Karma Style](https://karma-runner.github.io/6.4/dev/git-commit-msg.html)
 which might have started [as this gist](https://gist.github.com/fil-lewis-barclay/746e7563808d38400b89).
@@ -57,14 +60,14 @@ I don't always make a change that fits exactly into one of the 9 categories, I d
 I've settled on only these five `<type>` values for now:
 
 ### Things That Change Behavior
-- **feat:** New features that change behavior.
+- **feat:** New features.
 - **fix:** Adjustments that align unintended behavior with expectations.
 ```
 feat(auth): Add OAuth2 login support
 fix(login): Correct validation error message
 ```
 ### Things That Don't Change Behavior
-- **tidy:** Clarifying intent — refactors, documentation, styling improvements, and tests.
+- **tidy:** Clarifying intent — tests, refactoring, documentation, styling improvements, etc..
 - **build:** Updates in CI/CD, infrastructure, compilation, containerization, or dependency bumps.
 ```
 tidy(docs): Update README for installation instructions
@@ -97,4 +100,4 @@ Instead, including a reason or context is more informative, for example:
 
 ## Wrap up
 
-While semantic prefixes aren’t a one-size-fits-all solution, I hope you found these ideas interesting. I'll continue experimenting and update this blog if I discover something better.
+While semantic prefixes aren’t a one-size-fits-all solution, I hope you found these ideas interesting. I'll continue experimenting and update here if I discover something better.
