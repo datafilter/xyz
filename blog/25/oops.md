@@ -44,8 +44,7 @@ GoF was about observation, to classify, not to recommend.
 
 Design patterns, a common language, the same in multiple languages 
 
- --> link write OOP design patterns vs FP design patterns
- --> irony that monad is almost excatly what FP is not, but being abstract & uncomplected with time, its a useful pattern
+ --> link & write OOP design patterns vs FP design patterns, small monad explainer & how monad is like OOP(state+time) but instead (state+context/behavior).
 
 ## Is fp better ?
 Typically but not always, exceptions being:
@@ -62,6 +61,6 @@ performance - strides has been made eg immutable datastructures etc, but will ne
 Really depending on the context, it can be fine.
 OOPs is typically requires more work to compose/reuse, debug, test/mock & is more boilerplatey than fp.
 
-? Most business computing is linear (data in -> process -> data out). Stateless microservices with stateful DBs.
+? Most business computing is linear (data in -> process -> data out). FP is more apt: Stateless microservices with stateful DBs.
 ? Where _does_ OOP fit in well ?
 ? OOP fits in well with stateful context like a in-memory-db, or simulation (ie games) ?
