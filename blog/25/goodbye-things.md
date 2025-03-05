@@ -17,15 +17,15 @@ Then it goes into many practical tips to get rid of things, often with cheerful 
 
 Finally, the author shares the many aspects of how his life improved after embracing minimalism.
 
-# Key Takeaways
+## Key Takeaways
 
 1. Owning stuff is a distraction; we routinely maintain, clean, store, and move around all the junk we've collected over the years.
 2. We grossly over-value our possessions . The actual market value of our belongings is _way_ lower than what we paid for them.
 3. If something is not providing you value every year or two, it's doing the opposite.
 
-# Personal Reflections
+## Personal Reflections
 
-## Curiosity killed the cat
+### Curiosity killed the cat
 
 For cavemen, collecting stuff, especially food, was essential for survival. It meant not dying. Food was treasure.
 
@@ -44,7 +44,7 @@ What is useful for intellectual growth are mental tools, such as new perspective
 
 Mental tools are the new treasures. Knowing how to effectively find and utilize information quickly is worth more than simply knowing a lot of stuff.
 
-## Organizing is not minimizing
+### Organizing is not minimizing
 
 Moving things around doesn’t reduce complexity; it merely shifts it.
 
