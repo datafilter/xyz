@@ -8,7 +8,7 @@ practices/paradigm
 
 # Is OOP _(that)_ bad ?
 
-> TLDR: It's not good, but it's better nothing.
+> TLDR: It's mostly used in the wrong context. OOP is not well-suited for transactional software, which are most back-end services. OOP has it's place (and origin) in simulation and graphics.
 
 ## Why is it so popular
 
@@ -59,8 +59,13 @@ performance - strides has been made eg immutable datastructures etc, but will ne
 ## Conclusion
 
 Really depending on the context, it can be fine.
-OOPs is typically requires more work to compose/reuse, debug, test/mock & is more boilerplatey than fp.
+OOPs is typically more boilerplatey than fp because of all the patterns and layers of abstraction.
 
 ? Most business computing is linear (data in -> process -> data out). FP is more apt: Stateless microservices with stateful DBs.
+
+OOP is not well-suited for most back-end services. These are programs with the primary purpose to take inputs, process them, sometimes saving the results, and returning outputs (transactional software). Maintaining state in both memory and external storage complicates things where the actual source of truth resides in a database rather than in volatile memory (shopping carts, bank account balances, etc.. ). The fundamental principle of encapsulation that defines the O of OOP can make both composition and testing more challenging, often necessitating the use of mocking to test components in isolation.
+
 ? Where _does_ OOP fit in well ?
 ? OOP fits in well with stateful context like a in-memory-db, or simulation (ie games) ?
+
+
