@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programming blog and resources.">
+    <title>datafilter.xyz</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any">
+</head>
+
+<noscript>
+    <style>
+        header,
+        main {
+            display: none;
+        }
+    </style>
+    <p>This site uses JavaScript to load content. There is no HTML-only version <em>yet</em></p>
+    <p>View the content (blogs, etc..) without JavaScript at
+        <a href="https://github.com/datafilter/xyz">https://github.com/datafilter/xyz.</a>
+    </p>
+</noscript>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#links">Links</a>
+            <a href="#tools">Tools</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    </main>
+
+    <script>
+        const updateMain = () => {
+            document.querySelector('main').innerHTML = window.location.hash
+        }
+        window.addEventListener('DOMContentLoaded', updateMain)
+        window.addEventListener('hashchange', updateMain);
+    </script>
+
+</body>
+
+</html>
