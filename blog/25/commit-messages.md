@@ -1,8 +1,9 @@
 <!-- md.1
 published @2025-03-03
-updated @2025-03-03
+updated @2025-03-27
 changelog
-practices/git/naming/commit
+naming
+git
 —-->
 
 # Semantic Commit Prefixes
@@ -56,7 +57,31 @@ docs: Add deprecation notice to Karma README
 
 ## My take on contextual git prefixes
 
-I don't always make a change that fits exactly into one of the 9 categories, I don't like the friction of over-classifying what I've done, nor do I find them particularly useful when reviewing changes.
+I find this commit message structure useful:
+```
+  <type>(<context>): <summary>
+```
+- **Type** indicates the motivation or cause
+- **Context** gives any helpful context, such as the reason for the change or which aspect changed.
+- **Summary** is a brief description
+
+Preferred `<type>` values: feat, fix, tidy, build, edit
+
+### Context instead of Scope
+
+Which things have changed is already apparent via source control.
+
+I prefer additional information about _why_ things have changed rather than _how_. Specifically, when reviewing code, I'd like to know which commits change **behavior**, i.e., _feat_ or _fix_.
+
+Therefore instead of `<scope>` I chose `<context>`, for example:
+
+`fix(perf): Use standard quicksort instead of custom logic`
+
+### 5 types instead of 9
+
+- Sometimes changes dont fit exactly into one of the 9 categories.
+- I don't like the friction of over-classifying what I've done,
+- nor do I find all 9 scopes particularly useful when reviewing changes.
 
 I've settled on only these five `<type>` values for now:
 
@@ -69,7 +94,7 @@ fix(login): Correct validation error message
 ```
 ### Things That Don't Change Behavior
 - **tidy:** Clarifying intent — tests, refactoring, documentation, styling improvements, etc..
-- **build:** Updates in CI/CD, infrastructure, compilation, containerization, or dependency bumps.
+- **build:** Updates in CI/CD, config, infrastructure, compilation, containerization, or dependency bumps.
 ```
 tidy(docs): Update README for installation instructions
 build(ci): Update GitHub Actions workflow for deployment
@@ -77,22 +102,14 @@ build(ci): Update GitHub Actions workflow for deployment
 ### Anything Else
 - **edit:** A general catch-all that doesn't neatly classify as feat, fix, tidy & build.
 ```
-edit(scripts): Remove unused assets
+edit(assets): Remove unused icons
 ```
-
-### ~~Scope~~ Context
-
-I don't regard the information in the optional `(<scope>)` segment as a strict requirement to denote a component.
-
-Instead, including a reason or context is more informative, for example:
-
-`fix(perf): Use standard quicksort instead of custom logic`
 
 ## Pros and Cons
 
 **Pros:**
 
-- Distinguishes feature changes from internal improvements. This highlights commits that change functionality, and reviewers can quickly skim over those that don't.
+- Distinguishes feature changes from internal improvements. This highlights commits for functional changes, and reviewers can skim over those that don't.
 - Helps with automated changelog generation.
 
 **Cons:**
@@ -101,4 +118,4 @@ Instead, including a reason or context is more informative, for example:
 
 ## Wrap up
 
-While semantic prefixes aren’t a one-size-fits-all solution, I hope you found these ideas interesting. I'll continue experimenting and update here if I discover something better.
+While semantic prefixes aren’t a one-size-fits-all solution, I hope you found these ideas interesting. I'll continue experimenting with my approach and update here if I discover something better.
