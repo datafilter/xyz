@@ -1,12 +1,12 @@
 <!-- md.1
 published @2025-03-03
-updated @2025-03-27
+updated @2025-03-28
 changelog
 naming
 git
 —-->
 
-# Semantic Commit Prefixes
+# Contextual Commit Prefixes
 
 ## Common Git commit practices
 
@@ -117,4 +117,4 @@ edit(assets): Remove unused icons
 
 ## Wrap up
 
-While semantic prefixes aren’t a one-size-fits-all solution, I hope you found these ideas interesting. I'll continue experimenting with my approach and update here if I discover something better.
+Contextual prefixes may not be to everyone's liking; it seems excessive at first. Try it out for a week — it's not _that_ much effort, and it can be quite useful in a team setting and/or over the long term.
