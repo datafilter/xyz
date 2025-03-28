@@ -27,12 +27,11 @@ Meaningful commit messages guidelines:
    * related tickets are closed automatically
 
 
-## Git Karma
+## Commit message conventions
 
 Sometimes, you'll come across commit messages that start with "Add" "Bump" "Test" or "Chore"
 
-Recently I've come across a commit style that defines specific prefixes, called [Git Karma Style](https://karma-runner.github.io/6.4/dev/git-commit-msg.html)
-which might have started [as this gist](https://gist.github.com/fil-lewis-barclay/746e7563808d38400b89).
+Recently I was introduced to [Karma's commit message conventions](https://karma-runner.github.io/6.4/dev/git-commit-msg.html), which might have started [as this gist](https://gist.github.com/fil-lewis-barclay/746e7563808d38400b89).
 
 
 They structure commit messages in the format:
@@ -55,7 +54,7 @@ fix: add build commits for patch release
 docs: Add deprecation notice to Karma README
 ```
 
-## My take on contextual git prefixes
+## My take on contextual prefixes
 
 I find this commit message structure useful:
 ```
