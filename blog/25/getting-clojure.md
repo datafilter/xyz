@@ -1,6 +1,6 @@
 <!-- md.1
 published @2025-05-20
-updated @2025-05-20
+updated @2025-05-23
 clojure
 review/books
 —-->
@@ -32,6 +32,6 @@ Through this engaging journey, you arrive at the realization that you might just
 
 If I had to nitpick, you _might_ notice occasional inconsistencies or a few forced examples, but these minor issues don't detract from the book in any meaningful way.
 
-This isn’t a technical specification—but that’s precisely what makes it so enjoyable. It feels more like a friendly conversation designed to kickstart your journey. As the author paraphrases, learning Clojure requires a keyboard and some patience—he’s simply here to show you the ropes.
+This isn’t a technical specification—but that’s precisely what makes it so enjoyable. It feels more like a friendly conversation designed to kickstart your journey. As the author puts it - paraphrasing - it's up to you to learn Clojure with a keyboard and some patience; he's just here to show you the ropes.
 
 Overall, *Getting Clojure* is an excellent introduction to the language, providing a solid foundation for further learning and exploration. If you're interested in Clojure or unfamiliar with LISP dialects, I highly recommend it—its insights are well worth it.
