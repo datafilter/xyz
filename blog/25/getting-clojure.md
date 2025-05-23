@@ -7,31 +7,31 @@ review/books
 
 # Book Review: _Getting Clojure_ by Russ Olsen
 
->TLDR: A casual introduction to Clojure, perfectly suited for the intended audience - programmers with prior experience. The tone of the book is very conversational, making it both fun and light to read.
+> **TL;DR**: A casual yet insightful introduction to Clojure, perfectly suited for experienced programmers. The book’s conversational tone makes it both engaging and enjoyable to read.
 
 ## Structure
 
-The book follows a well-structured approach in each chapter, namely:
-- Describing features and concepts
-- Exploring examples in real-world code
+Each chapter follows a well-organized approach:
+- Introduction 
+- Getting into key features and concepts
+- Exploring real-world examples
 - Highlighting common pitfalls to avoid
+- Wrap-up
 
-The academic structure, i.e., introduction and wrap-up, used in each chapter might feel a bit wordy at first, but I’ve found that it really helps make it easier to absorb the information.
-
-## Not 5 Stars, but Close!
-
-You might come across an odd forced example, a quirky fictional reference, or the occasional imprecise or inconsistent term here and there, but that doesn't detract from the book in any significant way.
-
-Rather than comparing it to a technical specification, consider the book a friendly conversation to get you started on your journey. As the author puts it—paraphrasing—it's up to you to learn Clojure with a keyboard and some patience; he's just here to show you the ropes.
+The introduction and wrap-up in each chapter help reinforce comprehension, making it easier to absorb the material. The real-world examples and common pitfalls to watch out for makes the material tangible and practical.
 
 ## Understanding Clojure from the Inside Out
 
-Rather than comparing Clojure to other languages, it immerses you in idiomatic Clojure right from the start.
+Rather than comparing Clojure to other languages, the book fully immerses you in idiomatic Clojure right from the start.
 
-The author refrains from reiterating beginner concepts yet doesn't skim over any parts related to understanding the language, the underlying principles, and how it might be implemented.
+The author avoids unnecessary repetition of beginner concepts yet ensures a thorough explanation of the language’s core principles and potential implementations.
 
-After an engaging journey through Clojure, you're led to the exciting realization that you might just be able to write your own Lisp. By the end, the conclusion reveals how Clojure's homoiconicity makes implementing a REPL surprisingly straightforward. Ha! I was pleasantly surprised a couple of times like this throughout the book.
+Through this engaging journey, you arrive at the realization that you might just be able to write your own Lisp. The conclusion ties everything together by demonstrating how Clojure’s homoiconicity makes implementing a REPL surprisingly straightforward. Wow :D I was pleasantly surprised multiple times throughout the book with the ideas of Clojure, and the author did a great job to bring lots of those elementst to light that you might not otherwise find by just doing exercises or tutorials.
 
 ## Conclusion
 
-I'd recommend this book to anyone interested in exploring Clojure or gaining a fresh perspective on problem-solving.
+If I had to nitpick, you _might_ notice occasional inconsistencies or a few forced examples, but these minor issues don't detract from the book in any meaningful way.
+
+This isn’t a technical specification—but that’s precisely what makes it so enjoyable. It feels more like a friendly conversation designed to kickstart your journey. As the author paraphrases, learning Clojure requires a keyboard and some patience—he’s simply here to show you the ropes.
+
+Overall, *Getting Clojure* is an excellent introduction to the language, providing a solid foundation for further learning and exploration. If you're interested in Clojure or unfamiliar with LISP dialects, I highly recommend it—its insights are well worth it.
