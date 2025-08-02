@@ -7,7 +7,7 @@ review/books
 
 # Book Review: _Getting Clojure_ by Russ Olsen
 
-> **TL;DR**: A casual yet insightful introduction to Clojure, perfectly suited for experienced programmers. The book’s conversational tone makes it both engaging and enjoyable to read.
+> TLDR: A casual yet insightful introduction to Clojure, perfectly suited for experienced programmers. The book’s conversational tone makes it both engaging and enjoyable to read.
 
 ## Structure
 
