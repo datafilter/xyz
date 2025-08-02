@@ -1,6 +1,6 @@
 <!-- md.1
 published @2025-03-03
-updated @2025-03-28
+updated @2025-08-02
 changelog
 naming
 git
@@ -8,112 +8,94 @@ git
 
 # Contextual Commit Prefixes
 
-## Common Git commit practices
+## Relevance
 
-It helps when commits are short and focused. The smaller a change, the easier it is to review and revert.
+Commit messages communicate the intent of a change.
 
-The more frequent you commit, the easier it is to go back to a working state without losing a lot of work.
+### `description`
+> a brief summary of the change
 
-Atomic (or self-contained) commits focus on a single change. They are easy to revert in isolation.
-
-## Naming things
-
-Meaningful commit messages guidelines:
-* Keep the subject line short and descriptive
-* Focus on the “What” and only if necessary, the "Why"
-* Write in the imperative mood e.g., 'Fix bug' rather than 'Fixed bug'
-* Optionally, reference a task to:
-   * provide additional context in the future
-   * related tickets are closed automatically
-
-
-## Commit message conventions
-
-Sometimes, you'll come across commit messages that start with "Add" "Bump" "Test" or "Chore"
-
-Recently I was introduced to [Karma's commit message conventions](https://karma-runner.github.io/6.4/dev/git-commit-msg.html), which might have started [as this gist](https://gist.github.com/fil-lewis-barclay/746e7563808d38400b89).
-
-
-They structure commit messages in the format:
+e.g.
 ```
-  <type>(<scope>): <subject>
-```
-- **Type** indicates the category of change, such as a new feature or bug fix.
-- **Scope** the section, component, or area affected.
-- **Subject** is a brief description
-
-~~Allowed*~~ *_[Recommended](https://github.com/karma-runner/karma/commits/master
-)_ `<type>` values: feat, fix, perf, docs, style, refactor, test, build, _chore_
-
-Some examples:
-
-```
-fix(middleware): ensure Range headers adhere more closely to RFC 2616
-build(deps-dev): bump ws from 6.2.1 to 6.2.3
-fix: add build commits for patch release
-docs: Add deprecation notice to Karma README
+Update database query logic for performance improvement
+Prevent buffer overflow in user profile module
 ```
 
-## My take on contextual prefixes
+But which commits are the most important to pay attention to?
 
-I find this commit message structure useful:
-```
-  <type>(<context>): <summary>
-```
-- **Type** indicates the motivation or cause
-- **Context** gives any helpful context, such as the reason for the change or which aspect changed.
-- **Summary** is a brief description
+---
 
-Preferred `<type>` values: feat, fix, tidy, build, edit
-
-### Context instead of Scope
+## Context
 
 Which things have changed is already apparent via source control.
 
-I prefer additional information about _why_ things have changed rather than _how_. Specifically, when reviewing code, I'd like to know which commits change **behavior**, i.e., _feat_ or _fix_.
+To highlight what the commit is _about_, add `type` and/or `context`:
+```
+type: description
 
-Therefore instead of `<scope>` I chose `<context>`, for example:
+or
 
-`fix(perf): Use standard quicksort instead of custom logic`
+type(context): description
+```
 
-### 5 types instead of 9
+### `type`
+> the motivation or cause of the change.
+### `context`
+> optional extra info, such as the reason for the change or which aspect changed.
 
-- Sometimes changes dont fit exactly into one of the 9 categories.
-- I don't like the friction of over-classifying what I've done,
-- nor do I find all 9 scopes particularly useful when reviewing changes.
+---
 
-I've settled on only these five `<type>` values for now:
+## Type of change
 
-### Things That Change Behavior
+For `type` use of `feat`, `fix`, `tidy`, `build` or `edit`. 
+
+### things that change behavior:
 - **feat:** New features.
-- **fix:** Adjustments that align unintended behavior with expectations.
+- **fix:** Adjustments that align behavior with expectations. _(old or new)_
 ```
 feat(auth): Add OAuth2 login support
 fix(login): Correct validation error message
 ```
-### Things That Don't Change Behavior
+### things that do not change behavior:
 - **tidy:** Clarifying intent — tests, refactoring, documentation, styling improvements, etc..
 - **build:** Updates in CI/CD, config, infrastructure, compilation, containerization, or dependency bumps.
 ```
 tidy(docs): Update README for installation instructions
 build(ci): Update GitHub Actions workflow for deployment
 ```
-### Anything Else
-- **edit:** A general catch-all that doesn't neatly classify as feat, fix, tidy & build.
+### anything else
+- **edit:** A general catch-all that doesn't neatly fall into feat, fix, tidy or build.
 ```
 edit(assets): Remove unused icons
 ```
+You can of course use whatever you like for `type`, but it's easier when you have fewer options to pick from. 
+
+Often what matters most when you review a change, or large set of changes, is whether a commit changes behavior of the code or not.
 
 ## Pros and Cons
 
 **Pros:**
 
-- Distinguishes feature changes from internal improvements. This highlights commits for functional changes, and reviewers can skim over those that don't.
+- Easier code reviews. You get a birds-eye-view just from the commit messages page alone, and know where to focus on the most relevant changes.
+- Messages more likely describe _why_ things have changed, instead than _how_.
+- Distinguishes feature/functional changes from internal improvements.
+- More context in git blame when following the history of a change.
 - Helps with automated changelog generation.
 
 **Cons:**
-- Can introduce a slight barrier towards smaller commits.
-- Less characters available for the actual commit description.
+- Introduces a slight barrier towards smaller commits if you _have_ to classify each commit.
+- Less characters available for the commit description.
+
+## Related work
+
+A little bit of extra context goes a long way. Because of the aforementioned cons, I don't think you need to be strict about the types, or to follow the practice on every commit.
+
+But, if you want more formal, rigid structure, there are conventions like:
+
+* [Karma's commit message conventions](https://karma-runner.github.io/6.4/dev/git-commit-msg.html), which might have started [as this gist](https://gist.github.com/fil-lewis-barclay/746e7563808d38400b89)
+
+* [Conventional Commits](https://www.conventionalcommits.org/)
+
 
 ## Wrap up
 
