@@ -88,7 +88,7 @@ Often what matters most when you review a change, or large set of changes, is wh
 
 ## Related work
 
-A little bit of extra context goes a long way. Because of the aforementioned cons, I don't think you need to be strict about the types, or to follow the practice on every commit.
+Because of the extra friction to come up with commit messages, I don't think you need to be strict about it or follow the practice on every commit. Instead of reviewing large commits, I'd rather review lots of tiny commits in a PR/MR with good enough names.
 
 But, if you want more formal, rigid structure, there are conventions like:
 
@@ -99,4 +99,4 @@ But, if you want more formal, rigid structure, there are conventions like:
 
 ## Wrap up
 
-Contextual prefixes may not be to everyone's liking; it seems excessive at first. Try it out for a week — it's not _that_ much effort, and it can be quite useful in a team setting and/or over the long term.
+A little bit of extra context goes a long way. It might seem excessive at first, but try it out for a week — it's not _that_ much effort, and it can be quite useful in a team setting and/or over the long term.
