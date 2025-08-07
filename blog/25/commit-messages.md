@@ -17,7 +17,7 @@ Commit messages communicate the intent of a change.
 
 e.g.
 ```
-Improve database query for performance
+Improve db query for performance
 Prevent buffer overflow in user module
 ```
 
@@ -40,8 +40,9 @@ type(context): description
 
 ### `type`
 > The motivation or cause of the change.
-### `context`
-> Optional extra info, such as the reason for the change or which aspect affected.
+### `context` (optional)
+> Extra info to elaborate on the change
+> e.g. which aspect / what component / why / etc..
 
 ---
 
@@ -56,6 +57,12 @@ Use `type` to indicate: `feat`, `fix`, `tidy`, `build` or `edit`.
 feat(auth): Add OAuth2 login support
 fix(login): Correct validation error message
 ```
+
+Typically the relevant commits are the ones which alters code behavior.
+`feat` and `fix` signal that these commits are the ones to pay closer attention to.
+
+---
+
 ### Commits that do not change behavior:
 - **tidy:** Clarifying intent — tests, refactoring, documentation, styling improvements, etc..
 - **build:** Updates in CI/CD, config, infrastructure, compilation, containerization, or dependency bumps.
@@ -63,15 +70,27 @@ fix(login): Correct validation error message
 tidy(docs): Update README for installation instructions
 build(ci): Update GitHub Actions workflow for deployment
 ```
+
+---
+
 ### Anything else:
 - **edit:** A general catch-all that doesn't neatly fall into feat, fix, tidy or build.
 ```
 edit(assets): Remove unused icons
 ```
-You can use whatever you like for `type`, but having only a few options makes it easier to pick a `type` for the commit.
 
-Often, the important aspects during review — especially for large sets of changes — is whether the commit alters code behavior or not.
+You can of course use whatever you like for `type`, for example:
 
+```
+test: Fails gracefully with invalid inputs
+cicd: Generate .env file from secret manager
+perf(memory): Use transducer in result mapping
+bump(aeson): Update json parser to v3.0.12
+```
+
+However, sticking to only a few options makes it easier to pick a `type` for the commit.
+
+---
 
 ## Pros and Cons
 
