@@ -41,8 +41,8 @@ type(context): description
 ### `type`
 > The motivation or cause of the change.
 ### `context` (optional)
-> Extra info to elaborate on the change
-> e.g. which aspect / what component / why / etc..
+> Extra info to elaborate what changed -
+> which aspect, what component, why, etc.
 
 ---
 
@@ -58,7 +58,7 @@ feat(auth): Add OAuth2 login support
 fix(login): Correct validation error message
 ```
 
-Typically the relevant commits are the ones which alters code behavior.
+Typically, the relevant commits are the ones that alter behavior.
 `feat` and `fix` signal that these commits are the ones to pay closer attention to.
 
 ---
@@ -96,7 +96,7 @@ However, sticking to only a few options makes it easier to pick a `type` for the
 
 **Pros:**
 
-- Easier code reviews. You get a birds-eye-view just from the commit messages page alone, and know where to focus on the most relevant changes.
+- Easier code reviews. You get a bird’s-eye view just from the commit messages page, and know where to focus on the most relevant changes.
 - Messages are likely to also describe _why_ things have changed.
 - Distinguishes functional changes from internal improvements.
 - Helps with automated changelog generation.
@@ -111,7 +111,7 @@ However, sticking to only a few options makes it easier to pick a `type` for the
 
 If the extra friction of classifying commit messages leads to fewer, larger commits, it's better to avoid this practice for every commit.
 
-Having many small commits in a PR/MR - with good enough names but without a contextual prefix - is preferable to large commits all prefixed with `feat` or `fix`.
+Many small commits in a PR/MR - with good enough names but without a contextual prefix - are preferable to large commits all prefixed with `feat` or `fix`.
 
 If you want a more formal, rigid structure, there are conventions like:
 
