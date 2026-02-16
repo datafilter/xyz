@@ -12,14 +12,15 @@
 
 ## Irrelevant Metadata Separate from Content
 
-- The context of where or when content exists is relevant to pages that reference it, but not to the content itself.
-- Ideally, this metadata should be extracted at build time rather than included in the content's markdown.
+- Metadata (Where or when) independent from the content, metadata is only relevant to pages that reference the conent.
+- Ideally, metadata should be extracted at build time rather than included in content markdown.
+https://github.com/datafilter/xyz/blob/main/blog/25/commit-messages.md
 
 ## Static Build Output
 
 - Improved SEO.
 - Faster load times.
-- Minimizes duplicated compute, to save some energy and battery life.
+- Minimizes duplicated compute.
 
 ## Incremental Builds
 
