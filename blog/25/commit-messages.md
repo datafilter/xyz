@@ -1,125 +1,62 @@
-<!-- md.1
+<!-- md.0
 published @2025-03-03
-updated @2025-08-02
 changelog
 naming
 git
 —-->
 
-# Contextual Commit Prefixes
+# Git Commit Labels
 
-## Relevance
+> TLDR: Short prefixes in git commit messages to highlight functional changes. It makes code reviews both quicker and more thorough where it matters; as it pinpoints to where behavior shifted. A few seconds for a little bit of extra context goes a long way.
 
-Commit messages communicate the intent of a change.
-
-### `description`
-> A brief summary of the change.
-
-e.g.
-```
-Improve db query for performance
-Prevent buffer overflow in user module
-```
-
-But which commits are the most important to pay attention to?
-
----
-
-## Context
-
-What has changed is already apparent via source control.
-
-To highlight what the commit is _about_, add `type` and `context`:
-```
-type: description
-
-or
-
-type(context): description
-```
-
-### `type`
-> The motivation or cause of the change.
-### `context` (optional)
-> Extra info to elaborate what changed -
-> which aspect, what component, why, etc.
-
----
-
-## Type of change
-
-Use `type` to indicate: `feat`, `fix`, `tidy`, `build` or `edit`. 
-
-### Commits that change behavior:
-- **feat:** New features.
-- **fix:** Adjustments that align behavior with expectations. _(old or new)_
-```
-feat(auth): Add OAuth2 login support
-fix(login): Correct validation error message
-```
-
-Typically, the relevant commits are the ones that alter behavior.
-`feat` and `fix` signal that these commits are the ones to pay closer attention to.
-
----
-
-### Commits that do not change behavior:
-- **tidy:** Clarifying intent — tests, refactoring, documentation, styling improvements, etc..
-- **build:** Updates in CI/CD, config, infrastructure, compilation, containerization, or dependency bumps.
-```
-tidy(docs): Update README for installation instructions
-build(ci): Update GitHub Actions workflow for deployment
-```
-
----
-
-### Anything else:
-- **edit:** A general catch-all that doesn't neatly fall into feat, fix, tidy or build.
-```
-edit(assets): Remove unused icons
-```
-
-You can of course use whatever you like for `type`, for example:
+For over a year now, I’ve been prefixing my commit messages with simple labels. Just a quick "what is this" marker:
 
 ```
-test: Fails gracefully with invalid inputs
-cicd: Generate .env file from secret manager
-perf(memory): Use transducer in result mapping
-bump(aeson): Update json parser to v3.0.12
+feat: add OAuth2 login support
+fix: correct validation error on signup
+tidy: replace configuration as code with config file
+test: add edge case for invalid token
 ```
 
-However, sticking to only a few options makes it easier to pick a `type` for the commit.
+## Motivation
 
----
+The value isn't in the categorization itself; it’s in the signal-to-noise ratio.
+When scanning a PR or a long git log, you want to know what actually changes the system. By using Git Commit Labels, behavior-changing commits jump out immediately:
 
-## Pros and Cons
+`feat` – New behavior.
+`fix` – Behavior corrected (aligning it with expectations).
 
-**Pros:**
+Everything else is usually "noise" when you're debugging or reviewing. Whether it's a tidy (refactor/cleanup) or a test, you know at a glance that these shouldn't be the cause of a new bug or a functional shift.
 
-- Easier code reviews. You get a bird’s-eye view just from the commit messages page, and know where to focus on the most relevant changes.
-- Messages are likely to also describe _why_ things have changed.
-- Distinguishes functional changes from internal improvements.
-- Helps with automated changelog generation.
-- More context in git history.
+## Labels I typically use
 
-**Cons:**
-- Introduces a slight barrier to smaller commits, if each commit has to be classified.  
-- Fewer characters available for the commit description.
+I found that sticking to a few options makes the overhead of choosing a label almost zero:
+```
+feat / fix: The "important" ones. Pay attention here.
+tidy: Anything that makes intent more apparent or the codebase easier to modify - refactoring, formatting, even documentation.
+test: New or updated tests.
+```
 
+Sometimes I'll use other labels like:
+```
+build : CI/CD, dockerfile or compiler options
+bump: Upgrading dependencies
+perf: Performance improvements
+infra: Infrastructure-as-code changes
+docs: Documentation, sometimes even for tests
+edit: Miscellaneous, eg. removing unused assets
+```
 
-## Related work
+It's not an exhaustive list, and again, my emphasis is largely on `feat` & `fix`. With `feat` I don't mean a _new_ feature per say, or that the change was a great feat :P Just that some `aspect` or `property` changed - maybe I'll replace my use of `feat` with `mod` in the future 🤔
 
-If the extra friction of classifying commit messages leads to fewer, larger commits, it's better to avoid this practice for every commit.
+## Why not go "Official"?
 
-Many small commits in a PR/MR - with good enough names but without a contextual prefix - are preferable to large commits all prefixed with `feat` or `fix`.
+You’ve probably seen [Conventional Commits](https://www.conventionalcommits.org/) or the [Karma style](https://karma-runner.github.io/6.4/dev/git-commit-msg.html). In my experience the value proposition quickly drops off with rigid labels and parenthesized or scopes.
+- You don't gain much, and they often re-state the same thing you can derive from the commit message and the files that were changed.
+- When you're making tiny, rapid-fire commits, stopping to classify them can feel like a speed bump.
 
-If you want a more formal, rigid structure, there are conventions like:
+I prefer a more lightweight approach. It’s less about following a strict spec and more about providing a "bird's-eye view" for my team (and my future self). 
 
-* [Karma's commit message conventions](https://karma-runner.github.io/6.4/dev/git-commit-msg.html), which might have started [as this gist](https://gist.github.com/fil-lewis-barclay/746e7563808d38400b89)
+# Wrap up
 
-* [Conventional Commits](https://www.conventionalcommits.org/)
-
-
-## Wrap up
-
-A little bit of extra context goes a long way. It might seem excessive at first, but try it for a week — it's not _that_ much effort, and it can be quite useful in a team setting and over the long term.
+Try it for a week. Don’t get hung up on the "perfect" label—just start using `feat:` and `fix:`. It takes a bit of getting used to, but once you do, you’ll find it’s more than worth the few extra seconds. Big thanks to [Diogo](https://github.com/diogoaurelio/actionoscope/commits/main/) who introduced me to this style!
