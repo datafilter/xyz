@@ -24,16 +24,17 @@ The value isn't in the categorization itself; it’s in the signal-to-noise rati
 When scanning a PR or a long git log, you want to know what actually changes the system. By using Git Commit Labels, behavior-changing commits jump out immediately:
 
 `feat` – New behavior.
+
 `fix` – Behavior corrected (aligning it with expectations).
 
-Everything else is usually "noise" when you're debugging or reviewing. Whether it's a tidy (refactor/cleanup) or a test, you know at a glance that these shouldn't be the cause of a new bug or a functional shift.
+Everything else is usually "noise" when you're debugging or reviewing. Whether it's a [tidy](https://kentbeck.com) (refactor/cleanup) or a test, you know at a glance that these shouldn't be the cause of a new bug or a functional shift.
 
 ## Labels I typically use
 
 I found that sticking to a few options makes the overhead of choosing a label almost zero:
 ```
 feat / fix: The "important" ones. Pay attention here.
-tidy: Anything that makes intent more apparent or the codebase easier to modify - refactoring, formatting, even documentation.
+tidy: Anything that makes intent more apparent or the codebase easier to modify
 test: New or updated tests.
 ```
 
@@ -47,11 +48,11 @@ docs: Documentation, sometimes even for tests
 edit: Miscellaneous, eg. removing unused assets
 ```
 
-It's not an exhaustive list, and again, my emphasis is largely on `feat` & `fix`. With `feat` I don't mean a _new_ feature per say, or that the change was a great feat :P Just that some `aspect` or `property` changed - maybe I'll replace my use of `feat` with `mod` in the future 🤔
+It's not an exhaustive list, and again, my emphasis is largely on `feat` & `fix`. With `feat` I don't mean a _new_ feature per say, or that the change was a great feat 🏋️ - just that some `aspect` or `property` changed - maybe I'll replace my wording of `feat` with `mod` in the future 🤔
 
 ## Why not go "Official"?
 
-You’ve probably seen [Conventional Commits](https://www.conventionalcommits.org/) or the [Karma style](https://karma-runner.github.io/6.4/dev/git-commit-msg.html). In my experience the value proposition quickly drops off with rigid labels and parenthesized or scopes.
+You may have seen [Conventional Commits](https://www.conventionalcommits.org/) or the [Karma style](https://karma-runner.github.io/6.4/dev/git-commit-msg.html). In my experience the value proposition quickly drops off with rigid labels and parenthesized or scopes.
 - You don't gain much, and they often re-state the same thing you can derive from the commit message and the files that were changed.
 - When you're making tiny, rapid-fire commits, stopping to classify them can feel like a speed bump.
 
@@ -59,4 +60,8 @@ I prefer a more lightweight approach. It’s less about following a strict spec 
 
 # Wrap up
 
-Try it for a week. Don’t get hung up on the "perfect" label—just start using `feat:` and `fix:`. It takes a bit of getting used to, but once you do, you’ll find it’s more than worth the few extra seconds. Big thanks to [Diogo](https://github.com/diogoaurelio/actionoscope/commits/main/) who introduced me to this style!
+Try it for a week. Don’t get hung up on the "perfect" label — just start using `feat:`
+
+Once you get used to it, you’ll find it’s more than worth the few extra seconds.
+
+Big thanks to [Diogo](https://github.com/diogoaurelio/actionoscope/commits/main/) who introduced me to this style!
