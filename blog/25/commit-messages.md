@@ -56,12 +56,12 @@ You may have seen [Conventional Commits](https://www.conventionalcommits.org/) o
 - You don't gain much, and they often re-state the same thing you can derive from the commit message and the files that were changed.
 - When you're making tiny, rapid-fire commits, stopping to classify them can feel like a speed bump.
 
-I prefer a more lightweight approach. It’s less about following a strict spec and more about providing a "bird's-eye view" for my team (and my future self). 
+I prefer a more lightweight approach. It’s less about following a strict spec and more about providing a "bird's-eye view".
 
 # Wrap up
 
 Try it for a week. Don’t get hung up on the "perfect" label — just start using `feat:`
 
-Once you get used to it, you’ll find it’s more than worth the few extra seconds.
+Once you get used to it, you’ll find it’s worth the few extra seconds.
 
 Big thanks to [Diogo](https://github.com/diogoaurelio/actionoscope/commits/main/) who introduced me to this style!
