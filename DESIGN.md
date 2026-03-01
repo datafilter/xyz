@@ -22,7 +22,7 @@
 
 # V2
 
-If this was a High-Traffic Site
+_Benched goals, only relevant if this was a high traffic site_
 
 ## Static Build Output
 
