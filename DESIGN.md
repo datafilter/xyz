@@ -10,21 +10,32 @@
 - Tags provide a quick summary of the content.
 - They can be used as search keywords.
 
-## Irrelevant Metadata Separate from Content
+## Dynamic site from content
 
-- Metadata (Where or when) independent from the content, metadata is only relevant to pages that reference the conent.
-- Ideally, metadata should be extracted at build time rather than included in content markdown.
-https://github.com/datafilter/xyz/blob/main/blog/25/commit-messages.md
+- Instantly available on git push 
+
+## Minimal
+
+- No frameworks
+- No slow build times
+- Vanilla js, no embrace-extend-extinguish corporation languages here.
+
+# V2
+
+If this was a High-Traffic Site
 
 ## Static Build Output
 
-- Improved SEO.
 - Faster load times.
-- Minimizes duplicated compute.
+- Less client-side compute.
 
 ## Incremental Builds
 
 - Gather metadata and build only for files that have changed.
   - Quicker deployment.
-  - Reduces wasted computation.
+  - Reduces server-side re-computation.
 
+## Unrelated Metadata Separate from Content
+
+- Metadata (Where or when) independent from the content, as metadata is only relevant to pages that reference the conent.
+- Ideally, metadata is extracted at build time, rather than included in content.
