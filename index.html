@@ -9,42 +9,44 @@
     <link rel="icon" type="image/svg+xml" href="/static/favicon.svg" sizes="any">
     <link rel="stylesheet" href="/static/main.css">
 </head>
-
-<noscript>
-    <style>
-        header,
-        main {
-            display: none;
-        }
-    </style>
-    <p>This site uses JavaScript to load content. There is no HTML-only version <em>yet</em></p>
-    <p>View the content (blogs, etc..) without JavaScript at
-        <a href="https://github.com/datafilter/xyz">https://github.com/datafilter/xyz.</a>
-    </p>
-</noscript>
-
 <body>
+    <noscript>
+        <style>
+            header,
+            main {
+                display: none;
+            }
+        </style>
+        <p>This site uses JavaScript to load content. There is no HTML-only version <em>yet</em>.</p>
+        <p>
+            View the content (blogs, etc.) without JavaScript at
+            <a href="https://github.com/datafilter/xyz">
+                https://github.com/datafilter/xyz
+            </a>.
+        </p>
+    </noscript>
 
     <header>
         <nav>
             <a href="#about">About</a>
             <a href="#blog">Blog</a>
             <a href="#links">Links</a>
-            </ul>
         </nav>
     </header>
 
-    <main>
-    </main>
+    <main class="fade-in"></main>
 
     <script>
-        const updateMain = () => {
-            document.querySelector('main').innerHTML = window.location.hash
-        }
-        window.addEventListener('DOMContentLoaded', updateMain)
-        window.addEventListener('hashchange', updateMain);
+        const replaceMain = () => {
+            const oldMain = document.querySelector('main');
+            const newMain = oldMain.cloneNode(false);
+            newMain.innerHTML = window.location.hash;
+            oldMain.replaceWith(newMain);
+        };
+
+        window.addEventListener('DOMContentLoaded', replaceMain);
+        window.addEventListener('hashchange', replaceMain);
     </script>
 
 </body>
-
 </html>
