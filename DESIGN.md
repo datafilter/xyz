@@ -12,7 +12,8 @@
 
 ## Dynamic site from content
 
-- Instantly available on git push 
+- Preview instantly available on git push
+- Published blogs updated not long thereafter
 
 ## Minimal
 
